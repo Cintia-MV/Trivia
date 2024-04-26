@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="navBar">LogoTrivia</string>
+    <string name="bienvenida"> Bienvenido a Logo Trivia, ingresa tu nombre para comenzar...</string>
+    <string name="nombre">Escribe tu nombre</string>
+    <string name="btnComenza">Comenzar</string>
+    <string name="pregunta"> ¿A qué logo pertenece la imagen?</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="instagram">Instagram</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnIntentar">Intentalo otra vez</string>
+
+</resources>

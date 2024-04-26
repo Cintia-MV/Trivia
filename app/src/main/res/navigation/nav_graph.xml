@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioTrivia">
+
+    <fragment
+        android:id="@+id/inicioTrivia"
+        android:name="com.example.trivia.InicioTrivia"
+        android:label="fragment_inicio_trivia"
+        tools:layout="@layout/fragment_inicio_trivia" >
+        <action
+            android:id="@+id/action_inicioTrivia_to_preguntaTrivia"
+            app:destination="@id/preguntaTrivia" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultado"
+        android:name="com.example.trivia.Resultado"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+        <action
+            android:id="@+id/action_resultado_to_inicioTrivia"
+            app:destination="@id/inicioTrivia" />
+    </fragment>
+    <fragment
+        android:id="@+id/preguntaTrivia"
+        android:name="com.example.trivia.PreguntaTrivia"
+        android:label="fragment_pregunta_trivia"
+        tools:layout="@layout/fragment_pregunta_trivia" >
+        <action
+            android:id="@+id/action_preguntaTrivia_to_resultado"
+            app:destination="@id/resultado" />
+    </fragment>
+</navigation>

@@ -83,10 +83,5 @@ public class Resultado extends Fragment {
                 Navigation.findNavController(resultadoBinding.getRoot()).navigate(R.id.action_resultado_to_inicioTrivia);
             }
         });
-
-
-
-
-
     }
     }

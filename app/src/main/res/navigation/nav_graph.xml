@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_resultado_to_inicioTrivia"
             app:destination="@id/inicioTrivia" />
+        <action
+            android:id="@+id/action_resultado_to_preguntaTrivia"
+            app:destination="@id/preguntaTrivia" />
     </fragment>
     <fragment
         android:id="@+id/preguntaTrivia"

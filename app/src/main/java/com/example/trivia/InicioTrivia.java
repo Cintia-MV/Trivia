@@ -16,30 +16,27 @@ import com.example.trivia.databinding.FragmentInicioTriviaBinding;
 
 public class InicioTrivia extends Fragment {
 
-    private FragmentInicioTriviaBinding inicio;
+    private FragmentInicioTriviaBinding inicioBiding;  //Objeto del biding para vincular el layout correspondiente
 
-
-
-
+    //Constructor vacio
     public InicioTrivia() {
         // Required empty public constructor
     }
 
-
-
+    //Método onCreate
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
     }
 
+    //Método onCreateView
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        inicio = FragmentInicioTriviaBinding.inflate(inflater, container, false);
-
-        return inicio.getRoot();
+        // Inflar y vincular el layout usando ViewBinding
+        inicioBiding = FragmentInicioTriviaBinding.inflate(inflater, container, false);
+        return inicioBiding.getRoot();
     }
 
 
@@ -47,18 +44,19 @@ public class InicioTrivia extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        inicio.btnComenzar.setOnClickListener(new View.OnClickListener() {
+        //Botón comenzar
+        inicioBiding.btnComenzar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Capturo el nombre en una variable
-                String nombre = inicio.nombre.getText().toString();
+                String nombre = inicioBiding.nombre.getText().toString();
 
-                // Crear un Bundle para pasar datos al siguiente Fragmento
+                //Bundle para pasar datos al siguiente Fragmento
                 Bundle bundle = new Bundle();
                 bundle.putString("nombre", nombre);
 
-
-                Navigation.findNavController(inicio.getRoot()).navigate(R.id.action_inicioTrivia_to_preguntaTrivia, bundle);
+                //Navego al fragmento PreguntaTrivia y le paso el nombre traves del bundle
+                Navigation.findNavController(inicioBiding.getRoot()).navigate(R.id.action_inicioTrivia_to_preguntaTrivia, bundle);
             }
         });
     }

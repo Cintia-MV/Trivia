@@ -11,5 +11,6 @@
     <string name="instagram">Instagram</string>
     <string name="btnEnviar">Enviar</string>
     <string name="btnIntentar">Intentalo otra vez</string>
+    <string name="cambiarJugador">Nuevo jugador</string>
 
 </resources>

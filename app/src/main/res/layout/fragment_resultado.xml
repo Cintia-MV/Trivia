@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#8D00BCD4">
 
         <TextView
             android:id="@+id/textView"
@@ -47,7 +48,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btnIntentar"
-            tools:layout_editor_absoluteX="126dp"
-            tools:layout_editor_absoluteY="352dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado"
+            app:layout_constraintVertical_bias="0.257" />
+
+        <Button
+            android:id="@+id/btnNuevoJugador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="172dp"
+            android:text="@string/cambiarJugador"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnIntentar"
+            app:layout_constraintStart_toStartOf="@+id/btnIntentar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

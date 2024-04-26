@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#8D00BCD4">
 
         <TextView
             android:id="@+id/textView"
@@ -82,7 +83,7 @@
             app:layout_constraintVertical_bias="0.465">
 
             <RadioButton
-                android:id="@+id/rBtn1"
+                android:id="@+id/facebook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/facebook"
@@ -90,7 +91,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
-                android:id="@+id/rBtn2"
+                android:id="@+id/twitter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/twitter"
@@ -98,7 +99,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
-                android:id="@+id/rBtn3"
+                android:id="@+id/whatsapp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/whatsapp"
@@ -106,7 +107,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
-                android:id="@+id/rBtn4"
+                android:id="@+id/instagram"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/instagram"
